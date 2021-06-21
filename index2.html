@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h1 {
+            color: darkviolet;
+            font-size: 75px;
+            border:1px solid #d3d3d3;
+            background: black;
+        }
+        form {
+            color: hotpink;
+        }
+    </style>
+
+
+</head>
+<body >
+<h1>Thông tin đăng ký học sinh</h1><br>
+<form id="myForm">
+    Name: <input type="text" name="fname"><br>
+    Email: <input type="text" name="jemail"><br>
+    <input type="button" onclick="myFunction()" value="Reset Form">
+    <input type="button" onclick="myFunction()" value="Submit Form">
+    <link rel="myForm" href="index4.html">
+
+</form>
+<script>
+    function myFunction(){
+        document.getElementById("myForm").reset();
+        document.getElementById("myForm").submit();
+    }
+
+</script>
+</body>
+</html>
